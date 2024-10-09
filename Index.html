@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surrealismo: Arte sin Límites</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
+            background: #000;
+        }
+
+        /* Crear las líneas en movimiento */
+        .line {
+            position: absolute;
+            width: 100vw;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.2);
+            animation: move 5s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translateY(0) rotate(45deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(45deg);
+            }
+        }
+
+        .line:nth-child(odd) {
+            animation-duration: 7s;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            padding-top: 10%;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+
+        .social-section {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Líneas en el fondo -->
+    <div class="line" style="top: 0;"></div>
+    <div class="line" style="top: 200px;"></div>
+    <div class="line" style="top: 400px;"></div>
+    <div class="line" style="top: 600px;"></div>
+    <div class="line" style="top: 800px;"></div>
+
+    <!-- Contenido -->
+    <div class="content">
+        <h1>El Surrealismo: Un Mundo Onírico</h1>
+        <p>Descubre el arte que trasciende la realidad y penetra en la imaginación sin límites.</p>
+        
+        <!-- Sección de redes sociales -->
+        <div class="social-section">
+            <h2>Interacción en redes sociales</h2>
+
+            <!-- Facebook -->
+            <div>
+                <h3>Facebook</h3>
+                <div class="fb-comments" 
+                     data-href="https://www.facebook.com/surrealistly/photos/broken-calmart-digitalart-surrealism-arte-artsy-surreal-imagination-surrealistly/467248619425608/"  
+                     data-width="100%" 
+                     data-numposts="5"></div>
+                <div class="fb-like" 
+                     data-href="https://www.facebook.com/surrealistly/photos/broken-calmart-digitalart-surrealism-arte-artsy-surreal-imagination-surrealistly/467248619425608/" 
+                     data-width="" 
+                     data-layout="standard" 
+                     data-action="like" 
+                     data-size="small" 
+                     data-share="true"></div>
+            </div>
+
+            <!-- Instagram -->
+            <div>
+                <h3>Instagram</h3>
+                <blockquote class="instagram-media" 
+                            data-instgrm-permalink="https://www.instagram.com/surrealistly/p/CjS76okOoEi/" 
+                            data-instgrm-version="14" 
+                            style="max-width:540px; width:100%; margin:auto;">
+                </blockquote>
+                <script async defer src="//www.instagram.com/embed.js"></script>
+            </div>
+
+            <!-- Twitter -->
+            <div>
+                <h3>X (Twitter)</h3>
+                <blockquote class="twitter-tweet">
+                    <a href="https://x.com/freak51_z/status/745935678903623680"></a>
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+</body>
+</html>
